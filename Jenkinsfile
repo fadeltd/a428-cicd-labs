@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('back-end-python') {
-                    sh 'pip install -r gameactions/requirements.txt'
+                    sh 'pip install --user -r gameactions/requirements.txt'
                 }
             }
         }
